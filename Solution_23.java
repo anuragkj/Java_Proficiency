@@ -14,6 +14,7 @@ public class Solution_23
             } catch (PatternSyntaxException e) {
                 System.out.println("Invalid");
             }
+			testCases--;
 		}
 	}
 }
