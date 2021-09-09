@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 import java.util.*;
-class Solution_30{
+class Solution{
     public static void main(String []args){
         //Input
         Scanner sc= new Scanner(System.in);
@@ -12,22 +12,18 @@ class Solution_30{
         sc.close();
         String temp;
         BigDecimal a,b;
-        for (int i =0; i< n; i++)
-        {
-            for(int j = 1; j< n-i ; j++)
-            {
-                a = new BigDecimal(s[i]);
-                b = new BigDecimal(s[j]);
-                if(b.compareTo(a)>0)
-                {
-                    temp = s [i];
-                    s[i] = s[j];
-                    s[j] = temp ;
-                }
-                
-            }
-        }
         
+        Arrays.sort(s, new Comparator<String>() {
+        @Override
+        public int compare(String o1, String o2) {
+        if (o1 == null || o2 == null) {
+            return 0;
+        }
+        BigDecimal o1bd = new BigDecimal(o1);
+        BigDecimal o2bd = new BigDecimal(o2);
+        return o2bd.compareTo(o1bd);
+        }
+    });
 
         //Output
         for(int i=0;i<n;i++)
