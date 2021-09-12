@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class Solution_35{
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -13,16 +13,23 @@ public class Solution {
             for(int j = 0; j<size; j++){
                 temp.add(s.nextInt());
             }
+            
             arr.add(temp);
-            temp.clear();
+            
+            
         }
         n = s.nextInt();
         for(int i =0; i<n; i++){
             
             int row = s.nextInt();
-            List<Integer> temp = arr.get(row - 1);
-            System.out.println(temp.get(s.nextInt() -1));
-            temp.clear();
+            int pos = s.nextInt();
+            if(pos <= arr.get(row -1).size()){ 
+                System.out.println(arr.get(row -1).get(pos -1));
+            }
+            else{ 
+                System.out.println("ERROR!");
+            }
+            
         }
     }
 }
