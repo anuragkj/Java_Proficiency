@@ -39,7 +39,7 @@ class Student implements Comparable{
 
 
 //Complete the code
-public class Solution_42
+public class Solution_43
 {
    public static void main(String[] args){
       Scanner in = new Scanner(System.in);
