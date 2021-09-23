@@ -6,7 +6,7 @@ class Solution_38{
 	public static void main(String []argh)
 	{
 		Scanner in = new Scanner(System.in);
-		int abcv;
+		int ab;
 		int n=in.nextInt();
 		in.nextLine();
         HashMap <String,Integer> dict = new HashMap<String,Integer>();
