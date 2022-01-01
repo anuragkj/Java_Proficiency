@@ -1,4 +1,4 @@
-import java.util.Scanner;1
+import java.util.Scanner;
 import java.text.NumberFormat;
 import java.util.Locale;
 
